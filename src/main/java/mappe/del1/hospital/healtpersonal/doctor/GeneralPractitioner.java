@@ -3,6 +3,11 @@ package mappe.del1.hospital.healtpersonal.doctor;
 import mappe.del1.hospital.Patient;
 import mappe.del1.hospital.healtpersonal.doctor.Doctor;
 
+/**
+ * Class GeneralPractitioner
+ * @version 1.01 2020-03-01
+ * @author Oskar Remvang
+ */
 public class GeneralPractitioner extends Doctor {
 
     public GeneralPractitioner(String firstName, String lastName, String socialSecurityNumber) {

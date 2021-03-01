@@ -1,6 +1,13 @@
 package mappe.del1.hospital;
 
+/**
+ * Class HospitalClient
+ * Testclient for the hospital application
+ * @version 1.01 2020-03-01
+ * @author Oskar Remvang
+ */
 public class HospitalClient {
+
     public static void main(String[] args) {
         Hospital hospital = new Hospital("St.Olavs");
         HospitalTestData.fillRegisterWithTestData(hospital);

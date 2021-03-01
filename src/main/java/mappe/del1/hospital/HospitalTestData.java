@@ -8,9 +8,7 @@ public final class HospitalTestData {
     private HospitalTestData() {
         // not called
     }
-    /**
-     * @param hospital
-     */
+
     public static void fillRegisterWithTestData(final Hospital hospital) {
         // Add some departments
         Department emergency = new Department("Akutten");

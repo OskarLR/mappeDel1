@@ -5,12 +5,22 @@ import mappe.del1.hospital.healtpersonal.Employee;
 import java.util.ArrayList;
 import java.util.Objects;
 
+/**
+ * Class Department
+ * @version 1.01 2020-03-01
+ * @author Oskar Remvang
+ */
 public class Department {
 
     private String departmentName;
     private final ArrayList<Employee> employees;
     private final ArrayList<Patient> patients;
 
+    /**
+     * Constructor for the Department class
+     * Sets department name and initializes an empty ArrayList for fields employees and patients
+     * @param departmentName
+     */
     public Department(String departmentName) {
         this.departmentName = departmentName;
         this.employees = new ArrayList<Employee>();
@@ -29,6 +39,11 @@ public class Department {
         return employees;
     }
 
+    /**
+     * Adds an Employee to employees list if the do not already exist in the list
+     * @param employee
+     * @return true if employee was added, else false
+     */
     public boolean addEmployee(Employee employee){
         boolean wasAdded = false;
         if(!this.employees.contains(employee)){
@@ -42,6 +57,11 @@ public class Department {
         return patients;
     }
 
+    /**
+     * Adds an Patient to patients list if the do not already exist in the list
+     * @param patient
+     * @return true if employee was added, else false
+     */
     public boolean addPatient(Patient patient){
         boolean wasAdded = false;
         if(!this.patients.contains(patient)){
@@ -51,6 +71,11 @@ public class Department {
         return wasAdded;
     }
 
+    /**
+     * Removes Person from their respective list. Throws RemoveException if the Person could not be found in the list.
+     * @param person
+     * @throws RemoveException
+     */
     public void remove(Person person) throws RemoveException {
         if(person instanceof Patient){
             if(!patients.contains(person))throw new RemoveException("The patient did not exist in the department");

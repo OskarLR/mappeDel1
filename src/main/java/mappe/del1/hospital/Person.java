@@ -1,11 +1,22 @@
 package mappe.del1.hospital;
 
+/**
+ * Class Person
+ * @version 1.01 2020-03-01
+ * @author Oskar Remvang
+ */
 public abstract class Person {
 
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
 
+    /**
+     * Constructor for the Person class
+     * @param firstName
+     * @param lastName
+     * @param socialSecurityNumber
+     */
     public Person(String firstName, String lastName, String socialSecurityNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
